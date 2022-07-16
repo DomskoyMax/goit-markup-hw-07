@@ -15,9 +15,6 @@
     margin-bottom: 20px;
   }
 
-  .decoratoin-& {
-    color: #ffffff;
-  }
   &-adress {
     font-size: 14px;
     line-height: 1.71;
@@ -108,8 +105,13 @@
     transition: transform 250ms linear, background-color 250ms;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  &-soc-icon {
+    fill: #ffffff;
+  }
 }
-
+.decoratoin-footer {
+  color: #ffffff;
+}
 .container-join {
   display: flex;
   align-items: baseline;
@@ -126,9 +128,6 @@
   fill: #ffffff;
 }
 
-.join-soc-icon {
-  fill: #ffffff;
-}
 .join-soc-link:hover {
   transform: scale(1.2);
 }
@@ -149,9 +148,4 @@
   display: inline-flex;
   justify-content: center;
   margin-left: 12px;
-}
-
-.footer-soc-icon {
-  margin-left: 10px;
-  justify-content: center;
 }

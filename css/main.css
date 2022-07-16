@@ -430,7 +430,6 @@ address {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-
 .clients-title {
   font-weight: 700;
   font-size: 36px;
@@ -439,21 +438,17 @@ address {
   letter-spacing: 0.03em;
   color: var(--header-color);
 }
-
 .clients-item {
   display: flex;
   justify-content: center;
 }
-
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
-
 .clients-list {
   display: flex;
   margin-top: 50px;
 }
-
 .clients-link {
   display: flex;
   align-items: center;
@@ -465,23 +460,17 @@ address {
   transition: transform 250ms linear, border 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .clients-link:hover {
   transform: scale(1.1);
 }
-
 .clients-soc-icon {
   fill: #afb1b8;
   transition: fill 250ms;
 }
-
-.clients-link:hover,
-.clients-link:focus {
+.clients-link:hover, .clients-link:focus {
   border: 1px solid #2196f3;
 }
-
-.clients-link:hover .clients-soc-icon,
-.clients-link:focus .clients-soc-icon {
+.clients-link:hover .clients-soc-icon, .clients-link:focus .clients-soc-icon {
   fill: #2196f3;
 }
 
@@ -672,11 +661,6 @@ address {
   transition: transform 250ms linear;
   padding: 40px;
 }
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0) rotate(360deg);
-}
-
 .modal-close-btn {
   width: 30px;
   height: 30px;
@@ -690,13 +674,6 @@ address {
   justify-content: center;
   position: absolute;
 }
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .modal-title {
   font-weight: 700;
   font-size: 20px;
@@ -707,7 +684,6 @@ address {
   text-align: center;
   margin-bottom: 12px;
 }
-
 .modal-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -721,42 +697,18 @@ address {
   padding-left: 40px;
   outline: none;
 }
-
-.modal-close-btn:hover .modal-soc-icon,
-.modal-close-btn:focus .modal-soc-icon {
-  fill: #2196f3;
-}
-
 .modal-input:focus {
   border-color: #2196f3;
 }
-
-.modal-input:focus + .input-icon {
-  fill: #2196f3;
-}
-
 .modal-field {
   margin-bottom: 10px;
 }
-
 .modal-input::placeholder {
   font-size: 12px;
   line-height: 1.17x;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
-.input-wrap {
-  position: relative;
-}
-
-.input-icon {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .modal-label {
   display: block;
   margin-bottom: 4px;
@@ -764,6 +716,19 @@ address {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
+}
+.modal-field-check {
+  padding-left: 12px;
+  margin-top: 20px;
+}
+
+.modal-input:focus + .input-icon {
+  fill: #2196f3;
+}
+
+.modal-close-btn:hover .modal-soc-icon,
+.modal-close-btn:focus .modal-soc-icon {
+  fill: #2196f3;
 }
 
 .model-text-area:focus {
@@ -828,9 +793,21 @@ address {
   fill: #ffffff;
 }
 
-.modal-field-check {
-  padding-left: 12px;
-  margin-top: 20px;
+.input-wrap {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .portfolio-btn {

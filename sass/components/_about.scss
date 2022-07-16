@@ -10,7 +10,12 @@
     color: var(--header-color);
     margin-bottom: 50px;
   }
-  &-top-text {
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  &__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -25,13 +30,7 @@
     bottom: 0;
     position: absolute;
   }
-
-  &-img {
-    display: flex;
-    align-items: center;
-  }
-
-  &-img-list:not(:last-child) {
+  &__list:not(:last-child) {
     margin-right: 30px;
   }
 }

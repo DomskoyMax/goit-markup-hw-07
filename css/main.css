@@ -277,7 +277,12 @@ address {
   color: var(--header-color);
   margin-bottom: 50px;
 }
-.about-top-text {
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -292,19 +297,10 @@ address {
   bottom: 0;
   position: absolute;
 }
-.about-img {
-  display: flex;
-  align-items: center;
-}
-.about-img-list:not(:last-child) {
+.menu__list:not(:last-child) {
   margin-right: 30px;
 }
 
-.team {
-  padding-bottom: 94px;
-  padding-top: 94px;
-  background-color: #f5f4fa;
-}
 .team-title-heading {
   font-weight: 700;
   font-size: 36px;
@@ -314,7 +310,8 @@ address {
   color: var(--header-color);
   margin-bottom: 50px;
 }
-.team-title {
+
+.team-menu__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -322,7 +319,8 @@ address {
   letter-spacing: 0.03em;
   color: var(--header-color);
 }
-.team-text {
+
+.team-menu__text {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -331,36 +329,45 @@ address {
   margin-top: 10px;
   margin-bottom: 16px;
 }
-.team-list {
+
+.team-menu {
   display: flex;
 }
-.team-foto:not(:last-child) {
+
+.team-menu__team-foto:not(:last-child) {
   margin-right: 30px;
 }
-.team-foto {
+
+.team-menu__team-foto {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
 }
-.team-title-paragraph {
+
+.team-menu__paragraph {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.team-soc-list {
+
+.team-menu__soc-list {
   display: flex;
   justify-content: center;
 }
-.team-soc-item {
+
+.team-menu__soc-item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
 }
-.team-soc-item:last-child {
+
+.team-menu__soc-item:last-child {
   margin-right: 0;
 }
-.team-soc-link:hover {
+
+.team-menu__soc-link:hover {
   transform: rotate(360deg);
 }
-.team-soc-link {
+
+.team-menu__soc-link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -371,14 +378,18 @@ address {
   transition: transform 250ms linear, background-color 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-soc-link:hover, .team-soc-link:focus {
+
+.team-menu__soc-link:hover,
+.team-menu__soc-link:focus {
   background-color: #2196f3;
 }
-.team-soc-link:hover .masters-soc-icon, .team-soc-link:focus .masters-soc-icon {
+
+.team-menu__soc-link:hover .team-menu__soc-icon,
+.team-menu__soc-link:focus .team-menu__soc-icon {
   fill: #ffffff;
 }
 
-.masters-soc-icon {
+.team-menu__soc-icon {
   fill: #afb1b8;
   transition: fill 250ms;
 }
@@ -640,6 +651,9 @@ address {
 .modal-field {
   margin-bottom: 10px;
 }
+.modal-field:last-child {
+  margin-bottom: 0;
+}
 .modal-input::placeholder {
   font-size: 12px;
   line-height: 1.17x;
@@ -657,10 +671,6 @@ address {
 .modal-field-check {
   padding-left: 12px;
   margin-top: 20px;
-}
-
-.modal-input:focus + .input-icon {
-  fill: #2196f3;
 }
 
 .modal-close-btn:hover .modal-soc-icon,
@@ -698,14 +708,12 @@ address {
   align-items: center;
   text-align: center;
 }
-
 .check-text a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
-
 .check-text span {
   border-radius: 2px;
   width: 16px;
@@ -739,6 +747,9 @@ address {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
+}
+.modal-input:focus + .input-icon {
+  fill: #2196f3;
 }
 
 .is-hidden {

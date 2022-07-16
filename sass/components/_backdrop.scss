@@ -62,6 +62,9 @@
   &-field {
     margin-bottom: 10px;
   }
+  &-field:last-child {
+    margin-bottom: 0;
+  }
 
   &-input::placeholder {
     font-size: 12px;
@@ -81,9 +84,6 @@
     padding-left: 12px;
     margin-top: 20px;
   }
-}
-.modal-input:focus + .input-icon {
-  fill: #2196f3;
 }
 
 .modal-close-btn:hover .modal-soc-icon,
@@ -117,23 +117,24 @@
   display: flex;
   align-items: center;
   text-align: center;
+  & a {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+  }
+  & span {
+    border-radius: 2px;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 1.5px solid #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-.check-text a {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-}
-.check-text span {
-  border-radius: 2px;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-  border: 1.5px solid #212121;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .check-icon {
   fill: transparent;
 }
@@ -153,6 +154,9 @@
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
+  .modal-input:focus + & {
+    fill: #2196f3;
+  }
 }
 .is-hidden {
   opacity: 0;

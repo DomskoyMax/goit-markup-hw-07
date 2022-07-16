@@ -311,6 +311,9 @@ address {
   margin-bottom: 50px;
 }
 
+.team-menu {
+  display: flex;
+}
 .team-menu__title {
   font-weight: 500;
   font-size: 16px;
@@ -319,7 +322,6 @@ address {
   letter-spacing: 0.03em;
   color: var(--header-color);
 }
-
 .team-menu__text {
   font-size: 16px;
   line-height: 1.18;
@@ -329,44 +331,32 @@ address {
   margin-top: 10px;
   margin-bottom: 16px;
 }
-
-.team-menu {
-  display: flex;
-}
-
 .team-menu__team-foto:not(:last-child) {
   margin-right: 30px;
 }
-
 .team-menu__team-foto {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
 }
-
 .team-menu__paragraph {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 .team-menu__soc-list {
   display: flex;
   justify-content: center;
 }
-
 .team-menu__soc-item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
 }
-
 .team-menu__soc-item:last-child {
   margin-right: 0;
 }
-
 .team-menu__soc-link:hover {
   transform: rotate(360deg);
 }
-
 .team-menu__soc-link {
   width: 100%;
   height: 100%;

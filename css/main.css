@@ -827,6 +827,11 @@ address {
   margin: -15px;
 }
 
+.list-products {
+  width: calc(33.3333333333% - 30px);
+  margin: 15px;
+}
+
 .portfolio-top-text {
   position: absolute;
   top: 0;
@@ -846,11 +851,6 @@ address {
 .portfolio-top-wrap {
   position: relative;
   overflow: hidden;
-}
-
-.list-products {
-  width: calc(33.3333333333% - 30px);
-  margin: 15px;
 }
 
 .list-products:hover,

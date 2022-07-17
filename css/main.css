@@ -301,6 +301,12 @@ address {
   margin-right: 30px;
 }
 
+.team {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background-color: #f5f4fa;
+}
+
 .team-title-heading {
   font-weight: 700;
   font-size: 36px;
@@ -368,20 +374,18 @@ address {
   transition: transform 250ms linear, background-color 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team-menu__soc-link:hover,
-.team-menu__soc-link:focus {
+.team-menu__soc-link:hover, .team-menu__soc-link:focus {
   background-color: #2196f3;
-}
-
-.team-menu__soc-link:hover .team-menu__soc-icon,
-.team-menu__soc-link:focus .team-menu__soc-icon {
-  fill: #ffffff;
 }
 
 .team-menu__soc-icon {
   fill: #afb1b8;
   transition: fill 250ms;
+}
+
+.team-menu__soc-link:hover .team-menu__soc-icon,
+.team-menu__soc-link:focus .team-menu__soc-icon {
+  fill: #ffffff;
 }
 
 .clients {

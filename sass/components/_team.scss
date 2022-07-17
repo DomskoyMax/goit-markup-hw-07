@@ -1,3 +1,8 @@
+.team {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background-color: #f5f4fa;
+}
 .team-title-heading {
   font-weight: 700;
   font-size: 36px;
@@ -80,8 +85,8 @@
 .team-menu__soc-icon {
   fill: #afb1b8;
   transition: fill 250ms;
-  .team-menu__soc-link:hover .team-menu__&,
-  .team-menu__soc-link:focus .team-menu__& {
-    fill: #ffffff;
-  }
+}
+.team-menu__soc-link:hover .team-menu__soc-icon,
+.team-menu__soc-link:focus .team-menu__soc-icon {
+  fill: #ffffff;
 }
